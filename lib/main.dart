@@ -2,6 +2,7 @@ abstract class Role {
   void displayRole();
 }
 
+
 class Person implements Role {
   String name;
   int age;
@@ -13,6 +14,7 @@ class Person implements Role {
 
   }
 }
+
 
 class Student extends Person {
   String studentID;
@@ -40,6 +42,7 @@ class Student extends Person {
     print("Average Score: ${calculateAverageScore().toStringAsFixed(1)}");
   }
 }
+
 
 class Teacher extends Person {
   String teacherID;
